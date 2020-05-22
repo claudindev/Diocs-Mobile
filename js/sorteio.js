@@ -79,7 +79,7 @@ function fecharRegulamento() {
 }
 
 function atualizarProgresso(){
-    let porcentagem = userData.pontos*25;
+    let porcentagem = userData.pontos*20;
     if (porcentagem >= 100) {
         document.getElementsByClassName('sorteio-texto')[1].style.setProperty('display', 'none');
         document.getElementsByClassName('barra-progresso-fora')[0].style.setProperty('display', 'none');
@@ -99,7 +99,7 @@ function atualizarProgresso(){
         }
     } else {
         document.getElementsByClassName('barra-progresso-dentro')[0].style.width = porcentagem+"%";   
-        document.getElementsByClassName('sorteio-texto')[1].innerHTML = "Você tem "+ userData.pontos +"/4 pontos de busca";
+        document.getElementsByClassName('sorteio-texto')[1].innerHTML = "Você tem "+ userData.pontos +"/5 pontos de busca";
         let gradientValue = 'conic-gradient(#77B82E '+ 360*(porcentagem/100) +'deg, #d3d3d3 '+ 360*(porcentagem/100) +'deg';
 
         document.getElementsByClassName('circle-progress')[0].style.setProperty('background-image', gradientValue);
