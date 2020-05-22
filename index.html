@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/home.css">
 
 </head>
-<body>
+<body onload="checarJanela()" onresize="checarJanela()">
     
     <div class="grid-wrapper">
         <div class="map" id="map"></div>
@@ -121,5 +121,13 @@
     async defer></script>
     <script src="js/home.js"></script>
     <script src="js/sorteio.js"></script>
+    <script>
+        function checarJanela(){
+            let w = window.innerWidth;
+            if (w > 1080) {
+                window.location.href = "https://claudindev.github.io/Diocs/index.html";
+            }
+        }
+    </script>
 </body>
 </html>

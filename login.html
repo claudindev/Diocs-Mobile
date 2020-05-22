@@ -17,7 +17,7 @@
     <script src="owlcarousel/owl.carousel.min.js"></script>
     
 </head>
-<body>
+<body onload="checarJanela()" onresize="checarJanela()">
     
     <div class="grid-wrapper">
         <div class="content">
@@ -94,6 +94,12 @@
             document.getElementsByClassName('esconder')[2].style.display = 'none';
             document.getElementsByClassName('esconder')[3].style.display = 'none';
             document.getElementsByClassName('login')[0].classList.remove('hidden');
+        }
+        function checarJanela(){
+            let w = window.innerWidth;
+            if (w > 1080) {
+                window.location.href = "https://claudindev.github.io/Diocs/login.html";
+            }
         }
     </script>
 </body>
