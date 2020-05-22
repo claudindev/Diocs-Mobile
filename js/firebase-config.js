@@ -24,7 +24,13 @@ function criarConta(tipo) {
                 // Handle Errors here.
                 var errorCode = error.code;
                 var errorMessage = error.message;
-                alert('Houve um problema, verifique se as informações foram preenchidas corretamente.');
+                console.log(errorCode + '/' + errorMessage);
+                if (errorCode == 'auth/weak-password') {
+                    alert('Por favor, digite uma senha de pelo menos 6 digitos.');
+                } else {
+                    alert('Verifique se as informações foram preenchidas corretamente.');    
+                }
+                
             });
             break;
     }
