@@ -60,8 +60,8 @@ function initMap() {
                 economia = JSON.parse(localStorage.getItem('economia'));
             } else {
                 economia = {
-                    gco2: parseInt(distancia*200), 
-                    money: parseInt(parseInt(distancia)*5)
+                    gco2: parseInt(distancia*100), 
+                    money: parseInt(parseInt(distancia)*4)
                 };
             }
 
