@@ -1,0 +1,134 @@
+h2 {
+    margin: 30px 0 10px 0;
+}
+
+h4{
+    margin-bottom: 30px;
+}
+
+.buttons-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+}
+
+.social-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 156px;
+    margin: auto;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+.social-btn {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    background-position: center;
+    background-size: contain 60%;
+    background-repeat: no-repeat;
+}
+
+.google-btn {
+    background-image: url(../img/Google.svg);
+}
+
+.twitter-btn {
+    background-image: url(../img/Twitter.svg);
+}
+
+.facebook-btn {
+    background-image: url(../img/Facebook.svg);
+}
+
+.email-btn {
+    display: none;
+    background-image: url(../img/Email.svg);
+}
+
+.cobertura {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    right: 0;
+    top: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recheio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fbfbfb;
+    border-radius: 20px;
+}
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    padding-top: 10px;
+}
+
+.owl-dot {
+    width: 10px;
+    height: 10px;
+    box-shadow: none;
+    background-color: rgba(48, 84, 95, 0.26) !important;
+    margin: 0 10px;
+}
+.owl-dot.active{
+    background-color: #4B6971 !important;
+}
+
+.owl-item {
+    height: 300px;
+    width: 100%;
+}
+
+.owl-1 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/ilustracao-1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.owl-2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/ilustracao-1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.owl-3 {
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/ilustracao-1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hidden {
+    display: none;
+}
+
+.continuar-login {
+    margin: 0;
+    position: absolute;
+    bottom: 35px;
+    width: calc(100% - 60px);
+    left: 30px;
+}
