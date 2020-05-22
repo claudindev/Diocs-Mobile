@@ -5,11 +5,3 @@ function resetarBusca() {
 
     initMap();
 }
-
-function login() {
-
-}
-
-function abrirBusca(){
-    
-}

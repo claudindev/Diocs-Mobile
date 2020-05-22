@@ -61,6 +61,15 @@ function sairSorteio() {
     });
 }
 
+function abrirPopups() {
+    document.getElementsByClassName('sorteio')[0].classList.remove('sorteio-hidden');
+}
+
+function fecharPopups() {
+    document.getElementsByClassName('regulamento-wrapper')[0].classList.add('regulamento-hidden');
+    document.getElementsByClassName('sorteio')[0].classList.add('sorteio-hidden');
+}
+
 function abrirRegulamento() {
     document.getElementsByClassName('regulamento-wrapper')[0].classList.remove('regulamento-hidden');
 }
@@ -75,6 +84,10 @@ function atualizarProgresso(){
         document.getElementsByClassName('sorteio-texto')[1].style.setProperty('display', 'none');
         document.getElementsByClassName('barra-progresso-fora')[0].style.setProperty('display', 'none');
 
+        let gradientValue = 'conic-gradient(#77B82E 360deg, #d3d3d3 360deg';
+
+        document.getElementsByClassName('circle-progress')[0].style.setProperty('background-image', gradientValue);
+
         if (userData.sorteio == false) {
             document.getElementsByClassName('sorteio-texto')[0].innerHTML = `Parabéns! Você pode participar do sorteio:`;
             document.getElementsByClassName('btn-participar')[0].style.setProperty('display', 'block');
@@ -87,6 +100,9 @@ function atualizarProgresso(){
     } else {
         document.getElementsByClassName('barra-progresso-dentro')[0].style.width = porcentagem+"%";   
         document.getElementsByClassName('sorteio-texto')[1].innerHTML = "Você tem "+ userData.pontos +"/4 pontos de busca";
+        let gradientValue = 'conic-gradient(#77B82E '+ 360*(porcentagem/100) +'deg, #d3d3d3 '+ 360*(porcentagem/100) +'deg';
+
+        document.getElementsByClassName('circle-progress')[0].style.setProperty('background-image', gradientValue);
     }
     
 }
