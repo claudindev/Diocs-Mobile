@@ -8,9 +8,15 @@ html, body {
 }
 
 .logo {
+    background-image: url(../img/logo.svg);
     height: 35px;
-    width: 125px;
-    margin: 20px auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 30px auto;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 .grid-wrapper {
@@ -26,6 +32,7 @@ html, body {
 
 .content {
     width: 100vw;
+    height: 100%;
     padding: 0 30px;
     box-sizing: border-box;
 }
