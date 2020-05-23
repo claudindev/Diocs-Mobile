@@ -3,5 +3,6 @@ function resetarBusca() {
     document.getElementsByClassName('resultados')[0].classList.add('resultados-hidden');
     document.getElementsByClassName('grid-wrapper')[0].classList.remove('grid-wrapper-maior');
 
+    buscou = false;
     initMap();
 }
