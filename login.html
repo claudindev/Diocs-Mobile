@@ -59,6 +59,10 @@
         </div>
         <button class="continuar-login esconder" onclick="showLogin()">CONTINUAR</button>
     </div>
+    
+    <div class="splash">
+        <img src="/img/splash.gif" alt="" srcset="">
+    </div>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
@@ -100,6 +104,12 @@
             if (w > 1080) {
                 window.location.href = "https://claudindev.github.io/Diocs/login.html";
             }
+            splashHide();
+        }
+        function splashHide(){
+            setTimeout(function(){
+                document.getElementsByClassName('splash')[0].classList.add('splash-hidden');
+            }, 3000);
         }
     </script>
 </body>

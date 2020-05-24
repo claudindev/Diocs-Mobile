@@ -132,3 +132,24 @@ h4{
     width: calc(100% - 60px);
     left: 30px;
 }
+
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbfbfb;
+    opacity: 1;
+    transition: 300ms ease-in-out;
+    visibility: show;
+}
+
+.splash-hidden {
+    opacity: 0;
+    visibility: hidden;
+    top: 10px;
+}
