@@ -153,3 +153,32 @@ h4{
     visibility: hidden;
     top: 10px;
 }
+
+@media (max-height: 770px) {
+    .owl-item {
+        height: 250px;
+    }
+}
+
+@media (max-height: 730px) {
+    .owl-item {
+        height: 200px;
+    }
+}
+
+@media (max-height: 660px) {
+    .owl-item {
+        height: 170px;
+    }
+}
+
+@media (max-height: 640px) {
+    .owl-item {
+        height: 140px;
+    }
+}
+
+@media (max-height: 615px) {
+    .owl-item {
+        height: 100px;
+    }
