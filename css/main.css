@@ -97,7 +97,7 @@ button:active {
     background-position: center;
     margin: 30px auto;
     transform: translateX(-15px);
-    cursor: pointer;
+    cursor: default;
 }
 
 .button-secondary {
