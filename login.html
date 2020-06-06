@@ -60,8 +60,7 @@
         <button class="continuar-login esconder" onclick="showLogin()">CONTINUAR</button>
     </div>
     
-    <div class="splash">
-        <img src="img/splash.gif" alt="" srcset="">
+    <div class="splash" id="splash">
     </div>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -111,6 +110,8 @@
                 document.getElementsByClassName('splash')[0].classList.add('splash-hidden');
             }, 3000);
         }
+
+        document.getElementById('splash').innerHTML = '<img id="splash-gif" src="img/splash.gif" alt="" srcset="">';
     </script>
 </body>
 </html>
