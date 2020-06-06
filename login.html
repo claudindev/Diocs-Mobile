@@ -111,7 +111,10 @@
             }, 3000);
         }
 
-        document.getElementById('splash').innerHTML = '<img id="splash-gif" src="img/splash.gif" alt="" srcset="">';
+        document.getElementById('splash').innerHTML = '<img id="splash-gif" src="" alt="" srcset="">';
+        setTimeout(function() {
+            document.getElementById('splash-gif').setAttribute('src', 'img/splash.gif');
+        }, 150);
     </script>
 </body>
 </html>
